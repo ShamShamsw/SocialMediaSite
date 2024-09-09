@@ -1,0 +1,88 @@
+    /* Profile section*/
+    /* This is the CSS for the for the profile section*/
+    /* When creating this profile section I specifically wanted to have space in between the profile items.*/
+    /* This includes width, margin, background-color*/
+    /* These parts make the profile section the correct size, space the profile section out, and make the background white*/
+    /* border, padding, border-radius*/
+    /* These parts make the border the correct size, add padding to the profile section, and make the border rounded*/
+    /* box-shadow, and text-align*/
+    /* These parts add a shadow to the profile section and make the text centered*/
+.profile-section {
+    width:400px;
+    margin: 50px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+
+    /* Profile heading */
+    /* This section includes margin-bottom, font-size, color*/
+    /* These parts add space between the heading and the profile items, make the text the correct size, and make the text black*/
+  .profile-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+    /* Profile picture */
+    /* This section includes width, height, border-radius */
+    /* These parts make the profile picture the correct size and make the border rounded*/
+    /* object-fit, margin-bottom*/
+    /* These parts make the image fit the size of the box and add space between the image and the profile items*/
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+    /* Grey line divider */
+    /* This section includes width, margin, border*/
+    /* These parts make the divider the correct size, space the divider out, and remove the border*/
+    /* height, background-color, margin-bottom*/
+    /* These parts make the divider the correct height, make the divider grey, and add space between the divider and the profile items*/
+  .profile-divider {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+    /* Profile items section */
+    /* This section includes display, align-items*/
+    /* These parts make the profile items section a flexbox and align the items to the center*/
+    /* justify-content, margin-bottom*/
+    /* These parts make the items centered and add space between the profile items*/
+  .profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  
+    /* Profile icon */
+    /* This section includes width, height, border-radius, margin-right*/
+    /* These parts make the profile icon the correct size, make the border rounded, and add space between the image and text*/
+  .profile-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+    /* Profile text */
+    /* This section includes font-size, color, text-align*/
+    /* These parts make the text the correct size, make the text black, and make the text left aligned*/
+  .profile-text {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+  }
+  
