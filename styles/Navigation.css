@@ -1,0 +1,97 @@
+    /* Style the navbar container */
+    /* This is the CSS for the Navigation bar, this navagation bar uses justify-content: space-between to space out the content. */
+    /* When creating this navigation bar I specifically wanted to have space in between the home section and the menu.*/
+    /* Next are disply: and align-items: which are used to make sure that the home section text is in the middle and that the home doesn't rest on top of menu.*/
+    /* Lastly is background-color: and padding: These sections are used to set the color and size of the navigation bar.*/
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+    /* Left section (Home) */
+    /* This icludes color: text-decoration: and padding: these make is so that the text is white makes and changes its size*/
+    /* This sets the text color to white, removes the underline, and adds padding to the text*/
+  .left-section .home {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+    /* Right section (Dropdown menu) */
+    /* This section is used to style the dropdown menu, this includes position: display: and width: */
+    /* The position makes it so that the dropdown is under the menu, the display makes it so that the sections are in blocks*/
+    /* The width makes the size of the drop down uniform so its not larger then the menu*/
+  .right-section .dropDown {
+    position: relative;
+    display: inline-block;
+    width: 150px; /* Set a fixed width for both button and dropdown */
+  }
+  
+    /* The button used to open the dropdown menu */
+    /* This section includes background-color, color, border*/
+    /* These parts make the Menu button same color as the navigation bar, the text color white, and doesnt include a border*/
+    /* Next is padding, font-size, and cursor*/
+    /* These position the menu to the correct size, make the text the size it is, and when the mouse goes over the button it change it to a cursor*/
+    /* Lastly are width, text-align, and box-sizing*/
+    /* These make it so the button takes up the full width, that the text is alligned left and padding is inside the width*/
+    .right-section .dropButton {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+    /* Dropdown content (hidden by default) */
+    /* This section includes display, position*/
+    /* These make it so that the dropdown is hidden and that it is positioned to the right of the button*/
+    /* Next is background-color, box-shadow*/
+    /* These make the dropdown the same color as the navigation bar and adds a shadow to the dropdown*/
+    /* Lastly is z-index, width, and box-sizing*/
+    /* These make it so that the dropdown is on top of the navigation bar, that the dropdown is the same width as the button, and that the padding is inside the width*/
+  .right-section .dropContent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%; /* Ensure dropdown matches the button width */
+    box-sizing: border-box;
+  }
+  
+    /* Links inside the dropdown */
+    /* This section includes color, padding, text-decoration, display*/
+    /* These make the text black, add padding to the text, remove the underline, and make the text a block*/
+  .right-section .dropContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+    /* Change color of dropdown links on hover */
+    /* This section includes background-color*/
+    /* This makes the background color of the text a light grey when the mouse goes over the text*/
+  .right-section .dropContent a:hover {
+    background-color: #f1f1f1;
+  }
+  
+    /* Show the dropdown menu on hover */
+    /* This section includes display*/
+  .right-section .dropDown:hover .dropContent {
+    display: block;
+  }
+  
+  /* Change button color on hover */
+  .right-section .dropButton:hover {
+    background-color: #555;
+  }
+  
